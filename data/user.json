@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "João Silva",
+        "email": "joao.silva@email.com",
+        "imageUrl": "https://example.com/images/joao.jpg",
+        "password": "senha123",
+        "phoneNumber": "+556199999999",
+        "lattesLink": "http://lattes.cnpq.br/123456789",
+        "academicDescription": "Pesquisador na área de entomologia."
+    },
+    {
+        "id": 2,
+        "name": "Maria Oliveira",
+        "email": "maria.oliveira@email.com",
+        "imageUrl": "https://example.com/images/maria.jpg",
+        "password": "senha456",
+        "phoneNumber": "+556188888888",
+        "lattesLink": "http://lattes.cnpq.br/987654321",
+        "academicDescription": "Especialista em controle de vetores."
+    },
+    {
+        "id": 3,
+        "name": "Carlos Souza",
+        "email": "carlos.souza@email.com",
+        "imageUrl": "https://example.com/images/carlos.jpg",
+        "password": "senha789",
+        "phoneNumber": "",
+        "lattesLink": "",
+        "academicDescription": "Técnico de laboratório."
+    }
+]

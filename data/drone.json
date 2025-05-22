@@ -1,0 +1,38 @@
+[
+    {
+        "id": 101,
+        "battery": 98.7,
+        "coordinates": [
+            -15.78100,
+            -47.93100
+        ],
+        "is_active": true
+    },
+    {
+        "id": 102,
+        "battery": 65.2,
+        "coordinates": [
+            -15.78600,
+            -47.93600
+        ],
+        "is_active": true
+    },
+    {
+        "id": 103,
+        "battery": 30.5,
+        "coordinates": [
+            -15.79100,
+            -47.94100
+        ],
+        "is_active": false
+    },
+    {
+        "id": 104,
+        "battery": 80.1,
+        "coordinates": [
+            -15.79600,
+            -47.94600
+        ],
+        "is_active": true
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "battery": 92.3,
+        "co2": 435.8,
+        "humidity": 62.1,
+        "temperature": 27.5,
+        "number_of_aedes_aegypti": 8,
+        "number_of_foreign_objects": 1,
+        "coordinates": [
+            -15.78500,
+            -47.93500
+        ],
+        "is_active": true
+    },
+    {
+        "id": 2,
+        "battery": 78.9,
+        "co2": 410.2,
+        "humidity": 68.5,
+        "temperature": 25.9,
+        "number_of_aedes_aegypti": 15,
+        "number_of_foreign_objects": 0,
+        "coordinates": [
+            -15.79000,
+            -47.94000
+        ],
+        "is_active": true
+    },
+    {
+        "id": 3,
+        "battery": 55.6,
+        "co2": 390.1,
+        "humidity": 58.7,
+        "temperature": 29.1,
+        "number_of_aedes_aegypti": 3,
+        "number_of_foreign_objects": 3,
+        "coordinates": [
+            -15.79500,
+            -47.94500
+        ],
+        "is_active": false
+    },
+    {
+        "id": 4,
+        "battery": 99.1,
+        "co2": 460.5,
+        "humidity": 65.2,
+        "temperature": 26.3,
+        "number_of_aedes_aegypti": 0,
+        "number_of_foreign_objects": 0,
+        "coordinates": [
+            -15.80000,
+            -47.95000
+        ],
+        "is_active": true
+    }
+]

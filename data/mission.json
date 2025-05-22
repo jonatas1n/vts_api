@@ -1,0 +1,42 @@
+[
+    {
+        "id": 201,
+        "userId": 1,
+        "title": "Inspeção de Rotina - Área Norte",
+        "type": "Inspeção",
+        "description": "Verificar o status das gaiolas na área norte e identificar possíveis problemas.",
+        "startDate": "2025-04-25T08:00:00Z",
+        "endDate": "2025-04-25T12:00:00Z",
+        "isActive": true
+    },
+    {
+        "id": 202,
+        "userId": 2,
+        "title": "Liberação de Drones - Setor Alfa",
+        "type": "Liberação",
+        "description": "Liberar os drones para coleta de dados no setor alfa.",
+        "startDate": "2025-04-26T09:30:00Z",
+        "endDate": null,
+        "isActive": true
+    },
+    {
+        "id": 203,
+        "userId": 1,
+        "title": "Manutenção Urgente - Gaiola #3",
+        "type": "Manutenção",
+        "description": "Realizar a manutenção emergencial na gaiola com ID 3.",
+        "startDate": "2025-04-27T14:00:00Z",
+        "endDate": "2025-04-27T15:30:00Z",
+        "isActive": false
+    },
+    {
+        "id": 204,
+        "userId": 3,
+        "title": "Análise de Dados - Semana 17",
+        "type": "Análise",
+        "description": "Analisar os dados coletados pelos drones durante a semana 17.",
+        "startDate": "2025-04-28T10:00:00Z",
+        "endDate": null,
+        "isActive": true
+    }
+]
