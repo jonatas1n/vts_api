@@ -27,11 +27,13 @@ def load_data(entity_name):
         # Cria um dicionário para facilitar a busca por ID
         return {item['id']: item for item in data}
     except FileNotFoundError:
-        print(f"Erro: Arquivo data/{entity_name}.json não encontrado.")
+        logger.error(
+            f"Erro: Arquivo data/{entity_name}.json não encontrado."
+        )
         return {}
     except json.JSONDecodeError:
-        print(
-            f"Erro: Falha ao decodificar JSON de data/{entity_name}.json."
+        logger.error(
+            f"Erro: Arquivo data/{entity_name}.json não é um JSON válido."
         )
         return {}
 
