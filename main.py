@@ -45,16 +45,16 @@ def hello_world():
 
 @app.route("/logs")
 def logs():
-    log_file = 'app.log'
-    if os.path.exists(log_file):
-        with open(log_file, 'r') as f:
-            logs = f.readlines()
-        logs = [log.strip() for log in logs]
-        logs = "\n".join(logs)
-        return logs
+    log_file = './app.log'
+    if not os.path.exists(log_file):
+        logger.error("Log file not found")
+        return jsonify({"error": "Log file not found"}), 404
 
-    logger.error("Log file not found")
-    return jsonify({"error": "Log file not found"}), 404
+    with open(log_file, 'r') as f:
+        logs = f.readlines()
+    logs = [log.strip() for log in logs]
+    logs_str = "<br>".join(logs)
+    return logs_str, 200, {'Content-Type': 'text/html'}
 
 
 @app.route("/cages")
