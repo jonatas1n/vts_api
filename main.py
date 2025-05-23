@@ -4,11 +4,13 @@ from flask_cors import CORS
 import logging
 import os
 
+root_dir = os.path.dirname(os.path.abspath(__file__))
+
 logger = logging.getLogger(__name__)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    filename='app.log',
+    filename=os.path.join(root_dir, 'app.log'),
 )
 
 app = Flask(__name__)
@@ -18,7 +20,9 @@ CORS(app)
 def load_data(entity_name):
     """Carrega os dados de um arquivo JSON na pasta 'data'."""
     try:
-        with open(f'data/{entity_name}.json', 'r') as f:
+        with open(
+            os.path.join(root_dir, f'/data/{entity_name}.json'), 'r'
+        ) as f:
             data = json.load(f)
         # Cria um dicionário para facilitar a busca por ID
         return {item['id']: item for item in data}
@@ -45,7 +49,7 @@ def hello_world():
 
 @app.route("/logs")
 def logs():
-    log_file = './app.log'
+    log_file = os.path.join(root_dir, './app.log')
     if not os.path.exists(log_file):
         logger.error("Log file not found")
         return jsonify({"error": "Log file not found"}), 404
