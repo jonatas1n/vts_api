@@ -20,11 +20,10 @@ CORS(app)
 def load_data(entity_name):
     """Carrega os dados de um arquivo JSON na pasta 'data'."""
     try:
-        with open(
-            os.path.join(root_dir, f'/data/{entity_name}.json'), 'r'
-        ) as f:
+        entity_dir = os.path.join(root_dir, f'data/{entity_name}.json')
+        logger.info(f"Carregando dados de {entity_dir}")
+        with open(entity_dir, 'r') as f:
             data = json.load(f)
-        # Cria um dicionário para facilitar a busca por ID
         return {item['id']: item for item in data}
     except FileNotFoundError:
         logger.error(
